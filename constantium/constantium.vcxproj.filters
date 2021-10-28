@@ -18,6 +18,9 @@
     <ClCompile Include="entry.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib\constantium.hpp">
@@ -44,7 +47,25 @@
     <ClInclude Include="lib\helpers\result_resolvable.hpp">
       <Filter>lib</Filter>
     </ClInclude>
-    <ClInclude Include="lib\helpers\logger.hpp">
+    <ClInclude Include="sdk\client\handlers\features\features.handler.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\handlers\hooks\hooks.handler.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\handlers\client_handlers.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\handlers\handler.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\globals.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\services\log\logger.hpp">
       <Filter>lib</Filter>
     </ClInclude>
   </ItemGroup>

@@ -178,6 +178,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="entry.cpp" />
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib\cm\cm.hpp" />
@@ -186,9 +187,15 @@
     <ClInclude Include="lib\headers\external.hpp" />
     <ClInclude Include="lib\cm\concepts.hpp" />
     <ClInclude Include="lib\helpers\helpers.hpp" />
-    <ClInclude Include="lib\helpers\logger.hpp" />
     <ClInclude Include="lib\helpers\result_resolvable.hpp" />
+    <ClInclude Include="lib\services\log\logger.hpp" />
+    <ClInclude Include="sdk\client.hpp" />
     <ClInclude Include="sdk\client\client.hpp" />
+    <ClInclude Include="sdk\client\globals.hpp" />
+    <ClInclude Include="sdk\client\handlers\client_handlers.hpp" />
+    <ClInclude Include="sdk\client\handlers\features\features.handler.hpp" />
+    <ClInclude Include="sdk\client\handlers\handler.hpp" />
+    <ClInclude Include="sdk\client\handlers\hooks\hooks.handler.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
