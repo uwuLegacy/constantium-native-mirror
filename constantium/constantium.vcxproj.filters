@@ -21,6 +21,9 @@
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="lib\helpers\log\logger.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib\constantium.hpp">
@@ -72,6 +75,9 @@
       <Filter>lib</Filter>
     </ClInclude>
     <ClInclude Include="lib\helpers\log\logger.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\main.hpp">
       <Filter>lib</Filter>
     </ClInclude>
   </ItemGroup>

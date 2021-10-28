@@ -3,12 +3,12 @@
 
 namespace cst {
 
-	res_t construct_hook(client::Client* client) {
-
+	res_t construct_hook() {
+		return res_t::none;
 	}
 
-	res_t init_hook(client::Client*) {
-		
+	res_t init_hook() {
+		return res_t::none;
 	}
 
 	res_t ConstantiumEntry(HINSTANCE cur_inst) {
@@ -21,7 +21,11 @@ namespace cst {
 			}
 		});
 
-		client.init();
+		if (client.init() != res_t::none) {
+			spdlog::get("console")->critical("Initialization failed, exiting.");
+			Sleep(10000);
+			exit(0);
+		}
 
 		return res_t::none;
 	}

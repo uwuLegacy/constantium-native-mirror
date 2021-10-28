@@ -178,6 +178,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="entry.cpp" />
+    <ClCompile Include="lib\helpers\log\logger.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -198,6 +199,7 @@
     <ClInclude Include="sdk\client\handlers\features\features.handler.hpp" />
     <ClInclude Include="sdk\client\handlers\handler.hpp" />
     <ClInclude Include="sdk\client\handlers\hooks\hooks.handler.hpp" />
+    <ClInclude Include="src\main.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
