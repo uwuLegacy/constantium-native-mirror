@@ -68,5 +68,11 @@
     <ClInclude Include="lib\services\log\logger.hpp">
       <Filter>lib</Filter>
     </ClInclude>
+    <ClInclude Include="lib\services\services.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\helpers\log\logger.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

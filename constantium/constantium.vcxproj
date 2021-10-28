@@ -187,8 +187,10 @@
     <ClInclude Include="lib\headers\external.hpp" />
     <ClInclude Include="lib\cm\concepts.hpp" />
     <ClInclude Include="lib\helpers\helpers.hpp" />
+    <ClInclude Include="lib\helpers\log\logger.hpp" />
     <ClInclude Include="lib\helpers\result_resolvable.hpp" />
     <ClInclude Include="lib\services\log\logger.hpp" />
+    <ClInclude Include="lib\services\services.hpp" />
     <ClInclude Include="sdk\client.hpp" />
     <ClInclude Include="sdk\client\client.hpp" />
     <ClInclude Include="sdk\client\globals.hpp" />
