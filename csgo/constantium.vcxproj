@@ -180,6 +180,7 @@
   <ItemGroup>
     <ClCompile Include="entry.cpp" />
     <ClCompile Include="lib\helpers\log\logger.cpp" />
+    <ClCompile Include="sdk\client\handlers\features\features.handler.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -1,9 +1,9 @@
 #pragma once
 #include <lib/constantium.hpp>
-
+#include <sdk/client.hpp>
 #include "handleable.hpp"
 
-namespace cst::handlers {
+namespace cst::sdk {
 	
 	/*
 	*  Base class for a client registry/handler.
@@ -14,7 +14,7 @@ namespace cst::handlers {
 		ClientHandler() = default;
 
 		// Initializes registry and its members.
-		virtual res_t init_registry() = 0;
+		virtual res_t init_registry(const client::Client* client) = 0;
 		// Registers a single member.
 		virtual res_t register_member() = 0;
 
