@@ -80,5 +80,14 @@
     <ClInclude Include="src\main.hpp">
       <Filter>lib</Filter>
     </ClInclude>
+    <ClInclude Include="sdk\client\handlers\features\feature.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\handlers\handleable.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\mt\mt.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

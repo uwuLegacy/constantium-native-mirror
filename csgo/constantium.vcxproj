@@ -191,13 +191,16 @@
     <ClInclude Include="lib\helpers\helpers.hpp" />
     <ClInclude Include="lib\helpers\log\logger.hpp" />
     <ClInclude Include="lib\helpers\result_resolvable.hpp" />
+    <ClInclude Include="lib\mt\mt.hpp" />
     <ClInclude Include="lib\services\log\logger.hpp" />
     <ClInclude Include="lib\services\services.hpp" />
     <ClInclude Include="sdk\client.hpp" />
     <ClInclude Include="sdk\client\client.hpp" />
     <ClInclude Include="sdk\client\globals.hpp" />
     <ClInclude Include="sdk\client\handlers\client_handlers.hpp" />
+    <ClInclude Include="sdk\client\handlers\features\feature.hpp" />
     <ClInclude Include="sdk\client\handlers\features\features.handler.hpp" />
+    <ClInclude Include="sdk\client\handlers\handleable.hpp" />
     <ClInclude Include="sdk\client\handlers\handler.hpp" />
     <ClInclude Include="sdk\client\handlers\hooks\hooks.handler.hpp" />
     <ClInclude Include="src\main.hpp" />

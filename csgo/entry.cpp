@@ -7,4 +7,6 @@ DllMain(HINSTANCE instance, unsigned long reason, void* reserved) {
 		DisableThreadLibraryCalls(instance);
 		cst::ConstantiumEntry(instance);
 	}
+
+	return true;
 }

@@ -1,7 +1,9 @@
 #pragma once
 #include <lib/constantium.hpp>
 
-namespace cst::client {
+#include "handleable.hpp"
+
+namespace cst::handlers {
 	
 	/*
 	*  Base class for a client registry/handler.
