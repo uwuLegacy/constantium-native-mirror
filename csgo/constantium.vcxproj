@@ -24,6 +24,7 @@
     <ProjectGuid>{496eee4b-52e4-4139-b0d9-71c87ab581a6}</ProjectGuid>
     <RootNamespace>constantium</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>csgo</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
