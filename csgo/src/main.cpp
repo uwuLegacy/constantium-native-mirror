@@ -3,11 +3,11 @@
 
 namespace cst {
 
-	res_t construct_hook() {
+	res_t construct_hook(const client::Client* client) {
 		return res_t::none;
 	}
 
-	res_t init_hook() {
+	res_t init_hook(const client::Client* client) {
 		return res_t::none;
 	}
 

@@ -6,7 +6,10 @@
 
 namespace cst::client {
 
-	using api_hook_t = res_t(*)();
+	// fdecl.
+	class Client;
+
+	using api_hook_t = res_t(*)(const Client*);
 	
 
 	class Options {
@@ -25,9 +28,9 @@ namespace cst::client {
 	public:
 		Options options;
 
-		// Runs framework-based initialization.
+		// Runs framework initialization.
 		Client(Options _opt): options(_opt) {
-			options.api_constructor();
+			options.api_constructor(this);
 
 			logger::setup_logger(options.logger_opts);
 			this->logger = spdlog::get("console");
@@ -35,7 +38,7 @@ namespace cst::client {
 
 		// Runs feature and hook initialization.
 		res_t init() {
-			options.api_init();
+			options.api_init(this);
 
 			return res_t::none;
 		}
