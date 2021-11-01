@@ -204,6 +204,11 @@
     <ClInclude Include="sdk\client\handlers\handleable.hpp" />
     <ClInclude Include="sdk\client\handlers\handler.hpp" />
     <ClInclude Include="sdk\client\handlers\hooks\hooks.handler.hpp" />
+    <ClInclude Include="sdk\cstrike.hpp" />
+    <ClInclude Include="sdk\cstrike\cstrike.hpp" />
+    <ClInclude Include="sdk\render\platform.hpp" />
+    <ClInclude Include="sdk\render\ux.hpp" />
+    <ClInclude Include="src\features\test_feature.hpp" />
     <ClInclude Include="src\main.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

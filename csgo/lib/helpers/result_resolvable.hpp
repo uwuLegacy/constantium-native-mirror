@@ -3,6 +3,7 @@
 enum Resolvable {
 	none,
 	err_generic,
+	err_fatal,
 	err_winapi
 };
 

@@ -1,7 +1,10 @@
 #pragma once
 #include <lib/constantium.hpp>
 
+#include "exceptions/client_exceptions.hpp"
+
 #include "globals.hpp"
+#include "subroutines.hpp"
 #include "handlers/client_handlers.hpp"
 
 namespace cst::client {
@@ -30,14 +33,18 @@ namespace cst::client {
 
 		// Runs framework initialization.
 		Client(Options _opt): options(_opt) {
-			options.api_constructor(this);
-
 			logger::setup_logger(options.logger_opts);
 			this->logger = spdlog::get("console");
+
+			sbrt::sanity_check();
+
+			options.api_constructor(this);
 		}
 
 		// Runs feature and hook initialization.
 		res_t init() {
+			sbrt::init_interfaces();
+
 			options.api_init(this);
 
 			return res_t::none;

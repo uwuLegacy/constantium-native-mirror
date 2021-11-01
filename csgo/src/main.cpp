@@ -12,6 +12,7 @@ namespace cst {
 	}
 
 	res_t ConstantiumEntry(HINSTANCE cur_inst) {
+
 		auto client = client::Client({
 			construct_hook,
 			init_hook,

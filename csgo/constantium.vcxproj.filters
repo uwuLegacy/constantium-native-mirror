@@ -92,5 +92,20 @@
     <ClInclude Include="lib\mt\mt.hpp">
       <Filter>lib</Filter>
     </ClInclude>
+    <ClInclude Include="sdk\cstrike\cstrike.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\cstrike.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\test_feature.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\render\ux.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\render\platform.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
