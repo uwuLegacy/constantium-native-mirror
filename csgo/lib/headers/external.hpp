@@ -4,6 +4,8 @@
 // WinAPI
 //
 
+#define WIN32_LEAN_AND_MEAN
+#define NOMINMAX
 #include <Windows.h>
 #include <fcntl.h>
 
@@ -30,6 +32,10 @@
 
 #pragma warning(push, 0)
 
+// zeromq
+#include <zmq.hpp>
+#include <zmq_addon.hpp>
+
 // fmtlib
 #include <fmt/format.h>
 #include <fmt/printf.h>
@@ -40,7 +46,8 @@
 #include <spdlog/sinks/stdout_color_sinks.h>
 
 // polyhook2
-
-
+#include "polyhook2/ZydisDisassembler.hpp"
+#include "polyhook2/Virtuals/VFuncSwapHook.hpp"
+#include "polyhook2/Virtuals/VTableSwapHook.hpp"
 
 #pragma warning(pop)

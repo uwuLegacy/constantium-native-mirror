@@ -31,6 +31,7 @@ namespace cst::client {
 	public:
 		Options options;
 
+		// ctor.
 		// Runs framework initialization.
 		Client(Options _opt): options(_opt) {
 			logger::setup_logger(options.logger_opts);
@@ -48,6 +49,12 @@ namespace cst::client {
 			options.api_init(this);
 
 			return res_t::none;
+		}
+
+		// dtor.
+		// Safely shut down client.
+		~Client() {
+
 		}
 
 		logger::inst logger;

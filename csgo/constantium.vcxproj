@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -181,35 +181,49 @@
     <ClCompile Include="entry.cpp" />
     <ClCompile Include="lib\helpers\log\logger.cpp" />
     <ClCompile Include="sdk\client\handlers\features\features.handler.cpp" />
+    <ClCompile Include="sdk\client\handlers\hooks\hooks.handler.cpp" />
+    <ClCompile Include="sdk\client\routines\safety.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="lib\cm\cm.hpp" />
-    <ClInclude Include="lib\cm\templates.hpp" />
+    <ClInclude Include="lib\vendor\mem\memory.hpp" />
+    <ClInclude Include="lib\vendor\mps\mps.hpp" />
+    <ClInclude Include="lib\vendor\mps\templates.hpp" />
     <ClInclude Include="lib\constantium.hpp" />
+    <ClInclude Include="lib\headers\definitions.hpp" />
     <ClInclude Include="lib\headers\external.hpp" />
-    <ClInclude Include="lib\cm\concepts.hpp" />
+    <ClInclude Include="lib\vendor\mps\concepts.hpp" />
     <ClInclude Include="lib\helpers\helpers.hpp" />
     <ClInclude Include="lib\helpers\log\logger.hpp" />
     <ClInclude Include="lib\helpers\result_resolvable.hpp" />
-    <ClInclude Include="lib\mt\mt.hpp" />
+    <ClInclude Include="lib\vendor\local_libraries.hpp" />
+    <ClInclude Include="lib\vendor\mt\mt.hpp" />
     <ClInclude Include="lib\services\log\logger.hpp" />
     <ClInclude Include="lib\services\services.hpp" />
-    <ClInclude Include="sdk\client.hpp" />
+    <ClInclude Include="sdk\client_decl.hpp" />
     <ClInclude Include="sdk\client\client.hpp" />
+    <ClInclude Include="sdk\client\exceptions\client_exceptions.hpp" />
     <ClInclude Include="sdk\client\globals.hpp" />
     <ClInclude Include="sdk\client\handlers\client_handlers.hpp" />
     <ClInclude Include="sdk\client\handlers\features\feature.hpp" />
     <ClInclude Include="sdk\client\handlers\features\features.handler.hpp" />
     <ClInclude Include="sdk\client\handlers\handleable.hpp" />
     <ClInclude Include="sdk\client\handlers\handler.hpp" />
+    <ClInclude Include="sdk\client\handlers\hooks\hook.hpp" />
     <ClInclude Include="sdk\client\handlers\hooks\hooks.handler.hpp" />
+    <ClInclude Include="sdk\client\routines\interfaces.cpp" />
+    <ClInclude Include="sdk\client\subroutines.hpp" />
     <ClInclude Include="sdk\cstrike.hpp" />
     <ClInclude Include="sdk\cstrike\cstrike.hpp" />
+    <ClInclude Include="sdk\cstrike\interfaces\IBaseClientDll.hpp" />
+    <ClInclude Include="sdk\cstrike\interfaces\IVEngineClient.hpp" />
     <ClInclude Include="sdk\render\platform.hpp" />
     <ClInclude Include="sdk\render\ux.hpp" />
     <ClInclude Include="src\features\test_feature.hpp" />
     <ClInclude Include="src\main.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sdk\cstrike\interfaces\IVEngineClient.dll" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

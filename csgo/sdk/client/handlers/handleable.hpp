@@ -1,7 +1,7 @@
 #pragma once
 #include <lib/constantium.hpp>
 
-namespace cst::sdk {
+namespace cst::client {
 	class Handleable {
 	public:
 		Handleable() = default;

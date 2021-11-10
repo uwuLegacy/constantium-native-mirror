@@ -27,6 +27,12 @@
     <ClCompile Include="sdk\client\handlers\features\features.handler.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="sdk\client\routines\safety.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\client\handlers\hooks\hooks.handler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib\constantium.hpp">
@@ -38,13 +44,13 @@
     <ClInclude Include="sdk\client\client.hpp">
       <Filter>lib</Filter>
     </ClInclude>
-    <ClInclude Include="lib\cm\concepts.hpp">
+    <ClInclude Include="lib\vendor\mps\concepts.hpp">
       <Filter>lib</Filter>
     </ClInclude>
-    <ClInclude Include="lib\cm\templates.hpp">
+    <ClInclude Include="lib\vendor\mps\templates.hpp">
       <Filter>lib</Filter>
     </ClInclude>
-    <ClInclude Include="lib\cm\cm.hpp">
+    <ClInclude Include="lib\vendor\mps\mps.hpp">
       <Filter>lib</Filter>
     </ClInclude>
     <ClInclude Include="lib\helpers\helpers.hpp">
@@ -68,7 +74,7 @@
     <ClInclude Include="sdk\client\globals.hpp">
       <Filter>lib</Filter>
     </ClInclude>
-    <ClInclude Include="sdk\client.hpp">
+    <ClInclude Include="sdk\client_decl.hpp">
       <Filter>lib</Filter>
     </ClInclude>
     <ClInclude Include="lib\services\log\logger.hpp">
@@ -89,7 +95,7 @@
     <ClInclude Include="sdk\client\handlers\handleable.hpp">
       <Filter>lib</Filter>
     </ClInclude>
-    <ClInclude Include="lib\mt\mt.hpp">
+    <ClInclude Include="lib\vendor\mt\mt.hpp">
       <Filter>lib</Filter>
     </ClInclude>
     <ClInclude Include="sdk\cstrike\cstrike.hpp">
@@ -107,5 +113,35 @@
     <ClInclude Include="sdk\render\platform.hpp">
       <Filter>lib</Filter>
     </ClInclude>
+    <ClInclude Include="sdk\client\subroutines.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\handlers\hooks\hook.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\routines\interfaces.cpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\exceptions\client_exceptions.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\headers\definitions.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\cstrike\interfaces\IBaseClientDll.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\cstrike\interfaces\IVEngineClient.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\vendor\local_libraries.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\vendor\mem\memory.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sdk\cstrike\interfaces\IVEngineClient.dll" />
   </ItemGroup>
 </Project>

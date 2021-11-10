@@ -2,7 +2,7 @@
 #include <lib/constantium.hpp>
 #include "../handler.hpp"
 
-namespace cst::sdk {
+namespace cst::client {
 	class Feature : public Handleable {
 	public:
 		Feature() = default;

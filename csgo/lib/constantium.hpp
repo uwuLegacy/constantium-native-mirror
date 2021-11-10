@@ -2,7 +2,10 @@
 
 // global includes
 #include "headers/external.hpp"
+#include "headers/definitions.hpp"
+
+// global helpers
+#include "helpers/helpers.hpp"
 
 // local libraries
-#include "cm/cm.hpp"
-#include "helpers/helpers.hpp"
+#include "vendor/local_libraries.hpp"

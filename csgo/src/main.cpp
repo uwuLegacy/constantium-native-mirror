@@ -1,5 +1,5 @@
 #include <lib/constantium.hpp>
-#include <sdk/client.hpp>
+#include <sdk/client/client.hpp>
 
 namespace cst {
 
